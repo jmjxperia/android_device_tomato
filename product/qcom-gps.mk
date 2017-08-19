@@ -13,6 +13,10 @@ PRODUCT_PACKAGES += \
     libshims_get_process_name \
     libshims_flp
 
+# GPS Shim
+PRODUCT_PACKAGES += \
+    libshims_get_process_name
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
