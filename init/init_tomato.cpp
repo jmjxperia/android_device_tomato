@@ -43,7 +43,6 @@ using android::init::import_kernel_cmdline;
 
 static int display_density = 320;
 
-static int display_density = 230;
 
 static void import_cmdline(const std::string& key,
         const std::string& value, bool for_emulator __attribute__((unused)))
@@ -59,9 +58,7 @@ void init_target_properties()
 {
     std::string device;
 
-    device = property_get("ro.cm.device");
-    if (device != "tomato")
-        return;
+   
 
     char density[5];
     import_kernel_cmdline(0, import_cmdline);
