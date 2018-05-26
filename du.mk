@@ -24,6 +24,11 @@ PRODUCT_NAME := du_tomato
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := tomato
 
+#Fuck
+export KBUILD_BUILD_USER=Butti
+export KBUILD_BUILD_HOST=kaiz
+
+
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
