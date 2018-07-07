@@ -1,9 +1,17 @@
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl \
     gps.msm8916 \
-    libshims_flp \
-    libshims_get_process_name
+    libgnsspps
+
+# GNSS HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
+    android.hardware.gnss@1.0-service
+
+# GPS Shim
+PRODUCT_PACKAGES += \
+    libshims_get_process_name \
+    libshims_flp
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
