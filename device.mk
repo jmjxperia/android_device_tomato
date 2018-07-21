@@ -39,3 +39,7 @@ $(call inherit-product, vendor/yu/tomato/tomato-vendor.mk)
 PRODUCT_PACKAGES +=\
 MiXplorer \
 Jelly \
+
+# Charger
+  PRODUCT_PACKAGES += \
+    charger_res_images

@@ -26,3 +26,11 @@ include vendor/yu/tomato/BoardConfigVendor.mk
 TARGET_QCOM_DISPLAY_VARIANT := caf-msm8916
 TARGET_QCOM_AUDIO_VARIANT := caf-msm8916
 TARGET_QCOM_MEDIA_VARIANT := caf-msm8916
+
+# Offline Charging
+WITH_CM_CHARGER := true
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+BOARD_CHARGER_ENABLE_SUSPEND := false
+BACKLIGHT_PATH := "/sys/class/leds/lcd-backlight/brightness"
+BOARD_CHARGING_CMDLINE_NAME := "androidboot.mode"
+BOARD_CHARGING_CMDLINE_VALUE := "chargerlogo"
