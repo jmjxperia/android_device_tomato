@@ -37,7 +37,9 @@ include $(LOCAL_PATH)/product/*.mk
 $(call inherit-product, vendor/yu/tomato/tomato-vendor.mk)
 
 PRODUCT_PACKAGES +=\
-MiXplorer \
+FMRadio \
+SoundRecorder \
+SocialWalls \
 Jelly \
 
 # Charger
