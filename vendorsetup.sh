@@ -1,1 +1,1 @@
-add_lunch_combo du_tomato-userdebug
+add_lunch_combo mdroid_tomato-userdebug

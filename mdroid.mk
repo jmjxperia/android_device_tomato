@@ -14,20 +14,15 @@
 
 $(call inherit-product, device/yu/tomato/full_tomato.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/du/config/common.mk)
+# Inherit some common Mdroid stuff.
+$(call inherit-product, vendor/mdroid/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
-PRODUCT_NAME := du_tomato
+PRODUCT_NAME := mdroid_tomato
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := tomato
-
-#Fuck
-export KBUILD_BUILD_USER=Butti15
-export KBUILD_BUILD_HOST=Buttispot
-
 
 PRODUCT_GMS_CLIENTID_BASE := android-micromax
 
