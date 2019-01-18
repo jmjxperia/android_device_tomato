@@ -41,10 +41,6 @@ SoundRecorder \
 SocialWalls \
 Jelly \
 
-# Charger
-  PRODUCT_PACKAGES += \
-    charger_res_images
-
 #DU Changes only
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=25 \
