@@ -1,2 +1,18 @@
 # Boot
 sys.vendor.shutdown.waittime=500
+
+#ART
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+
+# Touch optimize
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
+
+# Higher fling velocities
+# for smoother scrolling and better responsiveness
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
+# Perf
+ro.vendor.qti.sys.fw.bg_apps_limit=20
