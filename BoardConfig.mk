@@ -93,5 +93,8 @@ TARGET_PROVIDES_WCNSS_QMI := true
 #WIFI_DRIVER_MODULE_NAME := "wlan"
 #WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
 
+#RIL
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
 # Inherit from proprietary files
 include vendor/yu/tomato/BoardConfigVendor.mk
