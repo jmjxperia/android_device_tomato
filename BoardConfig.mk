@@ -96,5 +96,10 @@ TARGET_PROVIDES_WCNSS_QMI := true
 #RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
+ALLOW_MISSING_DEPENDENCIES =true
+WITH_DEXPREOPT := false
+DONT_DEXPREOPT_PREBUILTS := true
+WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+
 # Inherit from proprietary files
 include vendor/yu/tomato/BoardConfigVendor.mk
