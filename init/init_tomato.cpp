@@ -1,6 +1,5 @@
 /*
    Copyright (c) 2015, The CyanogenMod Project
-
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -13,7 +12,6 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
-
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -38,12 +36,11 @@
 #include "init_msm8916.h"
 
 using android::base::GetProperty;
-
 using android::init::property_set;
 using android::init::import_kernel_cmdline;
 
-
 static int display_density = 320;
+
 
 static void import_cmdline(const std::string& key,
         const std::string& value, bool for_emulator __attribute__((unused)))
@@ -59,9 +56,7 @@ void init_target_properties()
 {
     std::string device;
 
-    device = GetProperty("ro.lineage.device", "");
-    if (device != "tomato")
-        return;
+   
 
     char density[5];
     import_kernel_cmdline(0, import_cmdline);
