@@ -101,5 +101,10 @@ WITH_DEXPREOPT := false
 DONT_DEXPREOPT_PREBUILTS := true
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 
+# Lights
+BOARD_LIGHTS_VARIANT := aw2013
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Inherit from proprietary files
 include vendor/yu/tomato/BoardConfigVendor.mk
+
